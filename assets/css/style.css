@@ -1,0 +1,158 @@
+.wrap{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width:90vw;
+	margin: 30px auto;
+}
+
+.box{
+	color: #fff;
+	background: #ddd;
+	width: 20%;
+	line-height: 130px;
+	text-align: center;
+	margin: 20px 20px;
+	cursor: wait;
+}
+
+.red{
+	background: rgba(139, 0, 0, 0.5);
+}
+
+.scaleX{
+	transform: scaleX(1);
+	transition: transform 1s ease;
+}
+
+	.box:hover .scaleX{
+		transform: scaleX(2);
+	}
+
+.scaleY{
+	transform: scaleY(1);
+	transition: transform 1s ease;
+}
+
+	.box:hover .scaleY{
+		transform: scaleY(2);
+	}
+
+.scale{
+	transform: scale(1,1);
+	transition: transform 1s ease;
+}
+
+	.box:hover .scale{
+		transform: scale(2,2);
+	}
+
+.skewX{
+	transform: skewX(1);
+	transition: transform 1s ease;
+}
+
+	.box:hover .skewX{
+		transform: skewX(-20deg);
+	}
+
+.skewY{
+	transform: skewY(1);
+	transition: transform 1s ease;
+}
+
+	.box:hover .skewY{
+		transform: skewY(-50deg);
+	}
+
+.skew{
+	transform: skew(1,1);
+	transition: transform 1s ease;
+}
+
+	.box:hover .skew{
+		transform: skew(-20deg, 10deg);
+	}
+
+.translateX{
+	transform: translateX(0em);
+	transition: transform 1s ease;
+}
+
+	.box:hover .translateX{
+		transform: translateX(6em);
+	}
+
+.translateY{
+	transform: translateY(0em);
+	transition: transform 1s ease;
+}
+
+	.box:hover .translateY{
+		transform: translateY(6em);
+	}
+
+.translate{
+	transform: translate(0em, 0em);
+	transition: transform 1s ease;
+}
+
+	.box:hover .translate{
+		transform: translate(6em, 4em);
+	}
+
+.matrix{
+	transform: matrix(1,1,1,2);
+	transition: transform 1s ease;
+}
+
+	.box:hover .matrix{
+		transform: matrix(1,-1,0,1,0,0);
+	}
+
+.rotate{
+	transform: rotate(0deg);
+	transition: transform 1s ease;
+}
+
+	.box:hover .rotate{
+		transform: rotate(7200deg);
+	}
+
+
+.wrap-bola{
+	display: flex;
+	justify-content: space-around;
+}
+
+.azul{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: blue;
+
+	transform: scale(1,1);
+	transition: transform 1s ease;
+}
+
+	.azul:hover .scale{
+		transform: scale(2,2);
+	}
+
+
+
+.verde{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: green;
+}
+
+.roxo{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: purple;
+}
+
+
